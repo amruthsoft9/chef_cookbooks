@@ -1,0 +1,92 @@
+I, [2017-02-20T12:02:07.305318 #3541]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2017-02-20T12:02:09.411771 #3541]  INFO -- default-ubuntu-1404: The provider 'virtualbox' that was requested to back the machine
+I, [2017-02-20T12:02:09.411994 #3541]  INFO -- default-ubuntu-1404: 'default' is reporting that it isn't usable on this system. The
+I, [2017-02-20T12:02:09.412066 #3541]  INFO -- default-ubuntu-1404: reason is shown below:
+I, [2017-02-20T12:02:09.412155 #3541]  INFO -- default-ubuntu-1404: 
+I, [2017-02-20T12:02:09.412227 #3541]  INFO -- default-ubuntu-1404: Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+I, [2017-02-20T12:02:09.412282 #3541]  INFO -- default-ubuntu-1404: Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+I, [2017-02-20T12:02:09.412333 #3541]  INFO -- default-ubuntu-1404: this to be available on the PATH. If VirtualBox is installed, please find the
+I, [2017-02-20T12:02:09.412898 #3541]  INFO -- default-ubuntu-1404: `VBoxManage` binary and add it to the PATH environmental variable.
+E, [2017-02-20T12:02:09.446983 #3541] ERROR -- default-ubuntu-1404: Create failed on instance <default-ubuntu-1404>.
+E, [2017-02-20T12:02:09.447333 #3541] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-02-20T12:02:09.447391 #3541] ERROR -- default-ubuntu-1404: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-02-20T12:02:09.447434 #3541] ERROR -- default-ubuntu-1404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-02-20T12:02:09.447475 #3541] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-02-20T12:02:09.447515 #3541] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-02-20T12:02:09.447553 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:09.447721 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:09.447771 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:09.447813 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:09.447853 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:09.447892 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:09.447931 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:09.447971 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:09.448010 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:09.448049 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:09.448119 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:09.448168 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:09.448209 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:09.448249 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:09.448289 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:09.448328 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:09.448367 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:09.448407 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:09.448447 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:09.448486 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:09.448526 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:09.448565 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:09.448604 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:09.448644 #3541] ERROR -- default-ubuntu-1404: ----End Backtrace-----
+E, [2017-02-20T12:02:09.448681 #3541] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2017-02-20T12:02:09.448719 #3541] ERROR -- default-ubuntu-1404: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2017-02-20T12:02:09.448756 #3541] ERROR -- default-ubuntu-1404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-02-20T12:02:09.448796 #3541] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-02-20T12:02:09.448834 #3541] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-02-20T12:02:09.448871 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:09.448909 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:09.448957 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:09.448998 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:09.449037 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:09.449090 #3541] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:09.449150 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:09.449191 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:09.449232 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:09.449297 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:09.449356 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:09.449399 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:09.449440 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:09.449479 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:09.449517 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:09.449570 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:09.449611 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:09.449650 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:09.449688 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:09.449727 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:09.449765 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:09.449804 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:09.449842 #3541] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:09.449881 #3541] ERROR -- default-ubuntu-1404: ----End Backtrace-----

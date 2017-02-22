@@ -1,0 +1,27 @@
+Generated at 2017-02-20 09:58:06 +0000
+SyntaxError: /root/chef-repo/cookbooks/httpd/recipes/default.rb:13: syntax error, unexpected ':', expecting keyword_end
+ action :enable :start
+                 ^
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/mixin/from_file.rb:30:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/run_context.rb:358:in `load_recipe_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/policy_builder/expand_node_object.rb:100:in `block in setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/policy_builder/expand_node_object.rb:99:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/policy_builder/expand_node_object.rb:99:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/client.rb:511:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/client.rb:281:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:295:in `block in fork_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:283:in `fork'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:283:in `fork_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:248:in `block in run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:236:in `run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application/client.rb:464:in `sleep_then_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application/client.rb:451:in `block in interval_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application/client.rb:450:in `loop'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application/client.rb:450:in `interval_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application/client.rb:434:in `run_application'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/application.rb:59:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/bin/chef-client:26:in `<top (required)>'
+/usr/bin/chef-client:57:in `load'
+/usr/bin/chef-client:57:in `<main>'

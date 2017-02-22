@@ -1,0 +1,216 @@
+I, [2017-02-20T12:02:06.583018 #3541]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
+I, [2017-02-20T12:02:07.305154 #3541]  INFO -- Kitchen: -----> Creating <default-ubuntu-1404>...
+I, [2017-02-20T12:02:09.452230 #3541]  INFO -- Kitchen: -----> Creating <default-centos-72>...
+E, [2017-02-20T12:02:11.596590 #3541] ERROR -- Kitchen: ------Exception-------
+E, [2017-02-20T12:02:11.596683 #3541] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-02-20T12:02:11.596731 #3541] ERROR -- Kitchen: Message: 2 actions failed.
+>>>>>>     Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-ubuntu-1404
+>>>>>>     Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-centos-72
+E, [2017-02-20T12:02:11.596777 #3541] ERROR -- Kitchen: ----------------------
+E, [2017-02-20T12:02:11.596819 #3541] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-20T12:02:11.596860 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:183:in `report_errors'
+E, [2017-02-20T12:02:11.596916 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:174:in `run_action'
+E, [2017-02-20T12:02:11.596973 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2017-02-20T12:02:11.597030 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:11.597075 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-20T12:02:11.597152 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-20T12:02:11.597200 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-20T12:02:11.597244 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-02-20T12:02:11.597301 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-20T12:02:11.597346 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-20T12:02:11.597389 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-02-20T12:02:11.597432 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-02-20T12:02:11.597486 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-20T12:02:11.597532 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-20T12:02:11.597589 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-20T12:02:11.597633 #3541] ERROR -- Kitchen: /usr/bin/kitchen:21:in `load'
+E, [2017-02-20T12:02:11.597688 #3541] ERROR -- Kitchen: /usr/bin/kitchen:21:in `<main>'
+E, [2017-02-20T12:02:11.597743 #3541] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-20T12:02:11.597797 #3541] ERROR -- Kitchen: -Composite Exception--
+E, [2017-02-20T12:02:11.597840 #3541] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-02-20T12:02:11.597880 #3541] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-ubuntu-1404
+E, [2017-02-20T12:02:11.597935 #3541] ERROR -- Kitchen: ----------------------
+E, [2017-02-20T12:02:11.597978 #3541] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-20T12:02:11.598019 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:11.598062 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:11.598127 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:11.598179 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:11.598223 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:11.598266 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:11.598324 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:11.598381 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:11.598427 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:11.598592 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:11.598643 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:11.598688 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:11.598731 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:11.598796 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:11.598844 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:11.598901 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:11.598950 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:11.599006 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:11.599051 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:11.599121 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:11.599172 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:11.599216 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:11.599260 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:11.599303 #3541] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-20T12:02:11.599345 #3541] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-02-20T12:02:11.599386 #3541] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-02-20T12:02:11.599441 #3541] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2017-02-20T12:02:11.599486 #3541] ERROR -- Kitchen: ----------------------
+E, [2017-02-20T12:02:11.599527 #3541] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-20T12:02:11.599569 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:11.599611 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:11.599667 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:11.599712 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:11.599768 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:11.599824 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:11.599869 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:11.599921 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:11.599979 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:11.600036 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:11.600094 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:11.600157 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:11.600215 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:11.600260 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:11.600303 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:11.600346 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:11.600389 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:11.600445 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:11.600489 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:11.600532 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:11.600575 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:11.600619 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:11.600662 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:11.600705 #3541] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-20T12:02:11.600747 #3541] ERROR -- Kitchen: -Composite Exception--
+E, [2017-02-20T12:02:11.600788 #3541] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-02-20T12:02:11.600828 #3541] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1] on default-centos-72
+E, [2017-02-20T12:02:11.600885 #3541] ERROR -- Kitchen: ----------------------
+E, [2017-02-20T12:02:11.600928 #3541] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-20T12:02:11.600969 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:11.601139 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:11.601192 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:11.601242 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:11.601308 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:11.601370 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:11.601415 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:11.601458 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:11.601513 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:11.601559 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:11.601603 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:11.601645 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:11.601689 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:11.601732 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:11.601775 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:11.601818 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:11.601861 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:11.601918 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:11.601962 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:11.602005 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:11.602049 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:11.602092 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:11.602154 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:11.602198 #3541] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-20T12:02:11.602240 #3541] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-02-20T12:02:11.602281 #3541] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2017-02-20T12:02:11.602322 #3541] ERROR -- Kitchen: Message: Failed to complete #create action: [Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: The provider 'virtualbox' that was requested to back the machine
+'default' is reporting that it isn't usable on this system. The
+reason is shown below:
+
+Vagrant could not detect VirtualBox! Make sure VirtualBox is properly installed.
+Vagrant uses the `VBoxManage` binary that ships with VirtualBox, and requires
+this to be available on the PATH. If VirtualBox is installed, please find the
+`VBoxManage` binary and add it to the PATH environmental variable.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1]
+E, [2017-02-20T12:02:11.602385 #3541] ERROR -- Kitchen: ----------------------
+E, [2017-02-20T12:02:11.602430 #3541] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-20T12:02:11.602485 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-02-20T12:02:11.602530 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-02-20T12:02:11.602573 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-02-20T12:02:11.602631 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-02-20T12:02:11.602677 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-02-20T12:02:11.602733 #3541] ERROR -- Kitchen: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.2/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-02-20T12:02:11.602778 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-02-20T12:02:11.602821 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-02-20T12:02:11.602876 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-02-20T12:02:11.602921 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-02-20T12:02:11.602981 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-02-20T12:02:11.603038 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-02-20T12:02:11.603096 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-20T12:02:11.603170 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-02-20T12:02:11.603229 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-02-20T12:02:11.603274 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-02-20T12:02:11.603337 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-02-20T12:02:11.603398 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-02-20T12:02:11.603461 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-02-20T12:02:11.603613 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-02-20T12:02:11.603669 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-02-20T12:02:11.603714 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-02-20T12:02:11.603758 #3541] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-02-20T12:02:11.603801 #3541] ERROR -- Kitchen: ----End Backtrace-----
